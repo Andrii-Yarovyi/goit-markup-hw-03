@@ -30,6 +30,10 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: var(--slate-text);
+
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
@@ -77,6 +81,9 @@ p {
 }
 
 .section {
+    /* width: 1158px;
+    margin-left: auto;
+    margin-right: auto; */
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -104,86 +111,77 @@ p {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* ====================================== /COMPONENTS ======================================  */
 
 /* ====================================== HEADER ======================================  */
+.top-line-bg {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 
 .page-header {
     display: flex;
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: center;
+    flex-direction: row;
     align-items: center;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    
-    justify-content: space-between;
-    height: 72px;
-    padding: 0px 15px;
+    justify-content: center;
+
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 0;
+
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
 }
 
+/* .logo-display {
+    display: block;
+} */
+
 .logo-link {
-    display: flex;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    /* display: flex; */
+
+    display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--navi-blue-dark);
-    padding-top: 3px;
+    padding: 0px;
 }
 .logo-web {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    /* display: flex; */
+    display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris-primary-brand);
 }
-.navigation {
-    display: flex;
-    flex-direction: row;
-}
-
-.logo {
-    display: flex;
-}
 
 .menu-nav {
     display: flex;
-    /* display: block; */
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     margin-left: 77px;
     gap: 40px;
-}
-
-.contact {
-    display: flex;
-}
-
-.contact-mail-address {
-    display: flex;
-    width: 153px;
-    height: 24px;
-    margin-left: 331px;
-}
-
-.contact-phone-number {
-    display: flex;
-    width: 151px;
-    height: 24px;
-    margin-left: 40px;
 }
 
 .menu-link {
@@ -200,6 +198,7 @@ p {
     color: var(--iris-primary-brand);
 }
 
+
 .contact-mail-address {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -207,6 +206,7 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-text);
+    margin-left: 331px;
 }
 
 .contact-phone-number {
@@ -216,6 +216,7 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-text);
+    margin-left: 40px;
 }
 
 .contact-phone-number:hover,
@@ -232,16 +233,7 @@ p {
 /* ====================================== HERO ======================================  */
 
 .hiro-fon {
-    
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
- 
-    height: 603px;
     background-color: var(--slate-text);
-    text-align: center;
-    padding: 0;
-    
 }
 
 .hiro-section {
@@ -249,16 +241,9 @@ p {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 192px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   
-}
-
-.title-h1 {
-    display: flex;
-    width: 492px;
 }
 
 .main-title {
@@ -270,20 +255,17 @@ p {
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    padding: 0;
 }
 
 .modal-btn {
     display: flex;
     margin-top: 48px;
-    width: 170px;
-    height: 51px;
+    padding: 16px 32px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     align-items: center;
-    justify-content: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background: var(--iris-primary-brand);
@@ -292,10 +274,14 @@ p {
 
 .modal-btn:hover, 
 .modal-btn:focus {
-    background: var(--iris-primary-brand) ;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-    0px 1px 1px rgba(46, 47, 66, 0.16), 
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+
+    background: var(--iris-primary-brand);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
@@ -307,25 +293,16 @@ p {
 
 /* -------------section 2------------- */
 
-.ll-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* width: 1128px; */
-}
-
 .cont-sec-2 {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 22px;
 }
 
 .sec-2-style {
     display: flex;
-    display: block;
     flex-direction: column;
-    width: 264px;
-    height: 104px;
+    align-items: flex-start;
 }
 
 .ll-section-link:hover, 
@@ -335,7 +312,6 @@ p {
 }
 
 /* -------------section 3------------- */
-
 .lll {
     padding-top: 0;
 }
@@ -352,15 +328,23 @@ p {
     padding-top: 72px;
     gap: 24px;
 }
+.lll-sec-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
 
 .lll-section-img {
+    width: 360px;
+    height: 300px;
     box-sizing: border-box;
     background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)),;
     background-blend-mode: soft-light, normal;
 }
 
-.lll-section-link:hover,
-.lll-section-link:focus {
+.lll-section-img:hover,
+.lll-section-img:focus {
     box-sizing: border-box;
     background: linear-gradient(0deg, rgba(77, 90, 229, 0.1),
      rgba(77, 90, 229, 0.1)),
@@ -370,16 +354,14 @@ p {
 } 
 
 /* -------------section 4------------- */
-.lv {
-    padding-top: 0;
-    height: 732px;
+
+.team-fon {
+    background-color: var(--cloud);
 }
 
 .lv-section {
     display: flex;
     flex-direction: column;
-    padding-top: 120px;
-    background-color: var(--cloud);
 }
 
 .lv-sec-list {
@@ -397,20 +379,14 @@ p {
     justify-content: center;
     align-items: center;
     padding: 0px 0px 32px;
-    margin-bottom: 120px;
     gap: 32px;
-
-    width: 264px;
-    height: 380px;
     cursor: pointer;
-
 
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-
 }
 
 .lv-sec-photo {
@@ -426,28 +402,19 @@ p {
     padding: 0px;
     gap: 8px;
 
-    width: 232px;
-    height: 56px;
-}
-
-.team-card:hover,
-.team-card:focus {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-    0px 1px 1px rgba(46, 47, 66, 0.16), 
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
 }
 
 /* ====================================== /HERO ======================================  */
 
 /* FOOTER */
+.footer-fon {
+    background-color: var(--navi-blue-dark);
+}
+
 .footer-section {
     display: flex;
-    background-color: var(--navi-blue-dark);
-    height: 310px;
-    padding-top: 100px;
-    padding-left: 15px;
+    padding: 100px 15px;
+
 }
 
 .footer-info {
@@ -485,27 +452,25 @@ p {
 
 /* ====================================== PORTFOLIO MAIN ======================================  */
 
+.logo-drop {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .portfolio {
     display: flex;
     flex-direction: column;
-}
-
-.portfolio-filters {
-    display: flex;
-    flex-direction: row;
-
     margin-left: auto;
     margin-right: auto;
-    flex-direction: center;
+    
     align-items: center;
     padding-top: 96px;
-    gap: 24px;
+    padding-bottom: 120px;
+    gap: 72px;
 }
 
 .portfolio-filters-list {
     display: flex;
     flex-direction: row;
-    /* align-items: flex-start; */
     padding: 0px;
     gap: 24px;
 }
@@ -546,21 +511,12 @@ p {
     border-radius: 4px;
 }
 
-
-.portfolio-project-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 72px;
-    
-}
-
 .project-card-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    gap: 48px;
 }
 
 .rows {
@@ -569,7 +525,6 @@ p {
     justify-content: center;
     align-items: center;
     gap: 24px;
-    margin-bottom: 48px;
 
 }
 .project-card {
