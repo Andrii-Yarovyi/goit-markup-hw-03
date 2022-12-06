@@ -31,7 +31,7 @@ body {
     font-size: 16px;
     color: var(--slate-text);
 
-    width: 1440px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -81,9 +81,6 @@ p {
 }
 
 .section {
-    /* width: 1158px;
-    margin-left: auto;
-    margin-right: auto; */
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -115,9 +112,7 @@ p {
     padding-right: 15px;
 }
 
-/* ====================================== /COMPONENTS ======================================  */
-
-/* ====================================== HEADER ======================================  */
+/* HEADER  */
 .top-line-bg {
     background: #FFFFFF;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
@@ -130,13 +125,14 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 }
 .navigation {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 24px 0;
 
 }
 .logo {
@@ -146,22 +142,21 @@ p {
     padding: 0px;
 }
 
-/* .logo-display {
-    display: block;
-} */
-
 .logo-link {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--navi-blue-dark);
     padding: 0px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 .logo-web {
     font-family: 'Raleway', sans-serif;
@@ -173,6 +168,10 @@ p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris-primary-brand);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .menu-nav {
@@ -231,6 +230,11 @@ p {
 /* ====================================== / HEADER ======================================  */
 
 /* ====================================== HERO ======================================  */
+
+.section-hiro {
+    padding-top: 102px;
+    padding-bottom: 102px;
+}
 
 .hiro-fon {
     background-color: var(--slate-text);
@@ -303,6 +307,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 264px;
+    padding: 0px;
+    gap: 8px;
+
 }
 
 .ll-section-link:hover, 
@@ -325,9 +333,10 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 72px;
+    margin-top: 72px;
     gap: 24px;
 }
+
 .lll-sec-photo {
     display: flex;
     flex-direction: column;
@@ -339,17 +348,18 @@ p {
     width: 360px;
     height: 300px;
     box-sizing: border-box;
-    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)),;
+    background: linear-gradient(0deg, 
+    rgba(77, 90, 229, 0.1), 
+    rgba(77, 90, 229, 0.1)),;
     background-blend-mode: soft-light, normal;
 }
 
 .lll-section-img:hover,
 .lll-section-img:focus {
     box-sizing: border-box;
-    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1),
-     rgba(77, 90, 229, 0.1)),
-      url(2368.jpg);
-    background-blend-mode: soft-light, normal;
+    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), 
+    url(2368.jpg);
+    background-blend-mode: soft-light, normal; 
     border: 1px solid #E7E9FC;
 } 
 
@@ -409,12 +419,11 @@ p {
 /* FOOTER */
 .footer-fon {
     background-color: var(--navi-blue-dark);
+    padding: 100px 15px;
 }
 
 .footer-section {
     display: flex;
-    padding: 100px 15px;
-
 }
 
 .footer-info {
@@ -447,6 +456,7 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cloud);
+    margin-top: 16px;
 
 }
 
@@ -456,15 +466,17 @@ p {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.section-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 .portfolio {
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    
     align-items: center;
-    padding-top: 96px;
-    padding-bottom: 120px;
     gap: 72px;
 }
 
@@ -537,10 +549,8 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0px 16px;
+    padding: 32px 16px;
     gap: 8px;
-    margin-top: 32px;
-    margin-bottom: 32px;
 }
 
 .project-card:hover, 
